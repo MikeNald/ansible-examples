@@ -1,0 +1,10 @@
+---
+# This playbook wait 600 seconds on a server
+
+- hosts: all
+  tasks:
+    - name: wait 600 seconds
+      shell: echo "ls /"
+      
+    - name: sleep 600 seconds
+      shell: sleep 600
